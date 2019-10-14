@@ -26,7 +26,6 @@ function Store(name, minCust, maximumCust, avarageCookies) {
     this.minCust = minCust;
     this.maxCust = maximumCust;
     this.avgCookie = avarageCookies;
-
     this.avgCustArray = [];
     this.cookiesEachHourArray = [];
     this.totalCookies = 0;
