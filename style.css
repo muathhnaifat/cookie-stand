@@ -1,27 +1,30 @@
 
 h1 {
-
     text-align: center;
     color: crimson;
 }
 
-body p {
+p {
     text-align: center;
     font-size: 25px;   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(85, 47, 4);
+    
 }
 
 
 table{
     width: 90%;
     padding: 7px;
+    text-align: center;
   }
 
   th {
     background: rgb(197, 204, 99);
     padding: 10px;
-    margin: 10px
+    margin: 10px;
+    color: crimson;
+     
   }
   
   td {
@@ -29,11 +32,13 @@ table{
     margin: 7px;
     border: 7px;
     text-align: center;
-    
+    color :indigo ;
   }
+
   tr{
 
     background-color: tan;
+    color :indigo ;
 
 }
   
@@ -43,4 +48,6 @@ table{
     font-size: 20px;
     background-color:rgb(101, 169, 233);
   }
+
+
  
