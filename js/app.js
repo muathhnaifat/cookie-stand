@@ -1,5 +1,5 @@
 var Hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
-var seattle = {
+var Seattle = {
     TheMin: 23,
     TheMax: 65,
     TheAv: 6.3,
@@ -17,7 +17,7 @@ var seattle = {
         return this.cookiesArray;
     },
 }
-seattle.amountOfCookiesPerHourFunction();
+Seattle.amountOfCookiesPerHourFunction();
 var Tokyo = {
     TheMin: 3,
     TheMax: 24,
@@ -94,8 +94,8 @@ var Lima = {
     },
 }
 Lima.amountOfCookiesPerHourFunction();
-arrayall = ["seattle", "Tokyo", "Dubai", "Paris", "Lima"];
-arrayall1 = [seattle, Tokyo, Dubai, Paris, Lima];
+arrayall = ["Seattle", "Tokyo", "Dubai", "Paris", "Lima"];
+arrayall1 = [Seattle, Tokyo, Dubai, Paris, Lima];
 for (let j = 0; j < arrayall.length; j++) {
     var count = 0;
     document.write("<h2>", "- ", arrayall[j], "</h2>");
