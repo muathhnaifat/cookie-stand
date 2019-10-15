@@ -28,7 +28,7 @@ table{
     text-align: center;
     
     
-  }
+}
 
   th {
     background: rgb(197, 204, 99);
@@ -58,7 +58,7 @@ table{
     color :indigo ;
     border-bottom-style: double ;
     border-bottom-color: red;
-
+    padding: 20px;
 }
   
   
