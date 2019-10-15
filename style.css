@@ -10,6 +10,7 @@ font-size: 25px;
 h1 {
     text-align: center;
     color: crimson;
+    
 }
 
 p {
@@ -25,6 +26,8 @@ table{
     width: 90%;
     padding: 7px;
     text-align: center;
+    
+    
   }
 
   th {
@@ -32,6 +35,9 @@ table{
     padding: 10px;
     margin: 10px;
     color: crimson;
+    border-bottom-style: solid ;
+    border-bottom-color: red;
+
      
   }
   
@@ -41,12 +47,17 @@ table{
     border: 7px;
     text-align: center;
     color :indigo ;
+    border-bottom-style: solid ;
+    border-bottom-color: red;
+
   }
 
   tr{
 
     background-color: tan;
     color :indigo ;
+    border-bottom-style: double ;
+    border-bottom-color: red;
 
 }
   
@@ -57,5 +68,4 @@ table{
     background-color:rgb(101, 169, 233);
   }
 
-
- 
+  

@@ -1,8 +1,7 @@
 'use strict';
-
 var Hours = [' 6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 var ShopLocations = [];
-var SalesTable = document.getElementById('salmonTable');
+var SalesTable = document.getElementById('TheTable');
 
 
 function HeaderRow() {
@@ -34,7 +33,7 @@ function Shop(Name, MinCus, MaxCus, AvCookies) {
 
 
 Shop.prototype.cookiesPerCustomer = function () {
-    this.numCustHourly();
+    this.CustNumHourly();
     for (var i = 0; i < Hours.length; i++) {
         var singleHourCookies = Math.ceil(this.avgCustArray[i] * this.avgCookie);
         this.HourlySales.push(singleHourCookies);
@@ -42,7 +41,7 @@ Shop.prototype.cookiesPerCustomer = function () {
     }
 };
 
-Shop.prototype.numCustHourly = function () {
+Shop.prototype.CustNumHourly = function () {
     for (var i = 0; i <= Hours.length; i++) {
         var singleHourCust = Math.floor(Math.random() * (this.maxCust - this.MinCus)) + this.MinCus;
         this.avgCustArray.push(singleHourCust);
@@ -56,6 +55,7 @@ Shop.prototype.render = function () {
     var tdShop = document.createElement('td');
     tdShop.textContent = this.Name;
     trRowName.appendChild(tdShop);
+
     for (var i = 0; i < this.HourlySales.length; i++) {
         var tdCell = document.createElement('td');
         tdCell.textContent = this.HourlySales[i];
@@ -85,13 +85,13 @@ function makeFooterRow() {
     var RowTable = document.createElement('tr');
     RowTable.textContent = 'Total';
     SalesTable.appendChild(RowTable);
-    var bigStupidTotal = 0;
+    var TotalOfEach = 0;
     for (var i = 0; i < Hours.length; i++) {
         var hourlyTotal = 0;
         for (var j = 0; j < ShopLocations.length; j++) {
             hourlyTotal = hourlyTotal + ShopLocations[j].HourlySales[i];
-            bigStupidTotal += ShopLocations[j].HourlySales[i];
-            console.log(bigStupidTotal);
+            TotalOfEach += ShopLocations[j].HourlySales[i];
+            console.log(TotalOfEach);
         }
 
         var tdElement = document.createElement('td');
@@ -100,7 +100,7 @@ function makeFooterRow() {
     }
 
     tdElement = document.createElement('td');
-    tdElement.textContent = bigStupidTotal;
+    tdElement.textContent = TotalOfEach;
     RowTable.appendChild(tdElement);
 };
 
