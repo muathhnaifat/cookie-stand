@@ -4,6 +4,19 @@ var ShopLocations = [];
 var SalesTable = document.getElementById('TheTable');
 
 
+
+
+function Shop(Name, MinCus, MaxCus, AvCookies) {
+
+    this.Name = Name;
+    this.MinCus = MinCus;
+    this.maxCust = MaxCus;
+    this.avgCookie = AvCookies;
+    this.avgCustArray = [];
+    this.HourlySales = [];
+    this.CookiesTotal = 0;
+    ShopLocations.push(this);
+}
 function HeaderRow() {
     var RowTable = document.createElement('tr');
     for (var i = 0; i <= Hours.length; i++) {
@@ -18,18 +31,6 @@ function HeaderRow() {
     SalesTable.appendChild(RowTable);
 };
 
-
-function Shop(Name, MinCus, MaxCus, AvCookies) {
-
-    this.Name = Name;
-    this.MinCus = MinCus;
-    this.maxCust = MaxCus;
-    this.avgCookie = AvCookies;
-    this.avgCustArray = [];
-    this.HourlySales = [];
-    this.CookiesTotal = 0;
-    ShopLocations.push(this);
-}
 
 
 Shop.prototype.cookiesPerCustomer = function () {
@@ -85,18 +86,20 @@ function makeFooterRow() {
     var RowTable = document.createElement('tr');
     RowTable.textContent = 'Total';
     SalesTable.appendChild(RowTable);
+
     var TotalOfEach = 0;
     for (var i = 0; i < Hours.length; i++) {
+        var tdElement = document.createElement('td');
+        RowTable.appendChild(tdElement);
+
         var hourlyTotal = 0;
         for (var j = 0; j < ShopLocations.length; j++) {
             hourlyTotal = hourlyTotal + ShopLocations[j].HourlySales[i];
             TotalOfEach += ShopLocations[j].HourlySales[i];
             console.log(TotalOfEach);
         }
-
-        var tdElement = document.createElement('td');
+        
         tdElement.textContent = hourlyTotal;
-        RowTable.appendChild(tdElement);
     }
 
     tdElement = document.createElement('td');
