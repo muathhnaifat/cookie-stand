@@ -1,128 +1,119 @@
+*{
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
 
-footer{
+header {
+  height: 95px;
+  background-color: #616060;
+  position: relative;
+  margin-bottom: 30px;
+}
+main {
+  width: 960px;
+  margin: auto;
+}
+
+nav {
+  width: 960px;
+  margin: auto;
+}
+nav > ul {
+  position: absolute; 
+  top: 50%;
+  height: 70px;
+  margin-top: -35px;
+  
+}
+
+nav > ul > li {
+  display: block;
+  margin-right: 50px;
+  float: left;
   text-align: center;
-  color: rgb(119, 57, 69);
-  padding: 20px;
-  font-size: 25px;
+  line-height: 60px;
+  margin-right: 50px;
+  padding-left: 30px;
+}
+
+nav > ul > li a {
+color: white;
+text-decoration: none;
+
   
-  }
+}
+
+
+nav > ul > li:first-child{
+  margin-right: 25px;
+}
+
+main > img:first-child {
+  margin-bottom: 30px;
+
+}
+
+main > ul > li {
+  float: left;
+  /* margin-right: 30px; */
+}
+
+main > ul > li:nth-child(3n + 2){
+  margin: 0 30px;
+}
+
+main > ul {
+  margin-bottom: 30px;
+  overflow: hidden;
+  float: left;
+  margin-left: -40px;
+}
+
+main > article {
+  margin-bottom: 30px;
+}
+main > article > section {
+  width: 50%;
+  float:right;
+  padding-left: 30px;
+}
+section {
+  position: relative;
+  height: 400px;
+}
+
+section > button {
+  width: 120px;
+  height: 30px;
+  background-color: #111;
+  color: #f1ecec;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
+  transition: 350ms;
+}
+
+section > button:hover{
+  background-color: blanchedalmond;
+  color: #111;
+  transition: 350ms;
+}
+
+footer {
+  background-color: #444;
+  height: 150px;
+}
+
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 7px;
+}
+
+p {
+  font-size: 1em;
+  font-style: italic;
+  height: 336px;
+  overflow: auto;
   
-  h1 {
-      text-align: center;
-      color: crimson;
-      
-      
-  }
-
-  p.intro {
-
-      border: transparent;
-  }
-  
-  p {
-      text-align: center;
-      font-size: 25px;   
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: rgb(89, 111, 160);
-      
-      
-  }
-  
-  
-  table{
-      width: 95%;
-      padding: 3px;
-      text-align: center;
-      margin: auto;
-      padding-bottom: 20px;
-      
-  }
-  
-    th {
-      background: rgba(47, 45, 60, 0.91);
-      padding: 9px 10px;
-      margin: auto;
-      color: rgb(255, 255, 255);
-      border: 2px solid rgba(169, 39, 65, 0.54);
-      font-size: 75%;
-       
-    }
-    
-    td {
-      background-color: #773945;
-      padding: 10px 10px;
-      margin: 7px;
-      border: 7px;
-      text-align: center;
-      color: rgba(185, 193, 63, 0.85);
-      border: 2px solid rgb(53, 68, 80);
-  }
-    
-  
-    table tr{
-  
-      background-color: rgb(13, 155, 96);
-      color :rgb(198, 211, 17) ;
-      border: 2px solid #3498db;
-      border-bottom-style: double ;
-      border-bottom-color: red;
-      padding: 25px;
-      margin: auto;
-      
-  }
-  #text{
-      color: rgb(183, 194, 39);
-      border: 2px solid rgb(13, 155, 96);
-
-  }
-    label{
-
-      padding-top: 75px;  
-      color: #25567d;
-
-  }
-    
-    body{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 20px;
-      background-color:hsl(0, 3%, 13%);
-    }
-
-    legend{
-
-      display: block;
-      text-align: center;
-      font-family: cursive;
-      font-weight: bold;
-      padding: 1px;
-      color: #bb7949
-
-    }
-    
-    fieldset{
-      padding-bottom: 30px;
-      padding-top: 30px;
-      text-align: center;
-      background-color: #7739451c;
-    }
-
-    button{
-      display: block;
-      margin: auto;
-      margin-top: 20px;
-      padding: 10px 20px;
-      border: 2px solid rgb(119, 57, 69);
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: bold;
-      color: #bf2121;
-      background: darkseagreen;
-      cursor: grab;
-      border-radius: 26px;
-      transition: inherit;
-    }
-
-    input{
-      border-color: 2px #8a3142;
-
-    }
-   
+}
