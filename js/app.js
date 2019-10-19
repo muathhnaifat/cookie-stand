@@ -102,16 +102,16 @@ Lima.amountPerHour();
 
 
 
-arrayall = ["Seattle", "Tokyo", "Dubai", "Paris", "Lima"];
-arrayall1 = [Seattle, Tokyo, Dubai, Paris, Lima];
-for (let j = 0; j < arrayall.length; j++) {
+nameArray = ["Seattle", "Tokyo", "Dubai", "Paris", "Lima"];
+valueArray = [Seattle, Tokyo, Dubai, Paris, Lima];
+for (let j = 0; j < nameArray.length; j++) {
     var count = 0;
-    document.write("<h2>", "- ", arrayall[j], "</h2>");
+    document.write("<h2>", "- ", nameArray[j], "</h2>");
     document.write("<ul>");
     for (i = 0; i < 15; i++) {
-        count += arrayall1[j].TheArrayOfCookies[i];
+        count += valueArray[j].TheArrayOfCookies[i];
         document.write("<li>");
-        document.write(Hours[i], ": ", arrayall1[j].TheArrayOfCookies[i], " Cookies.");
+        document.write(Hours[i], ": ", valueArray[j].TheArrayOfCookies[i], " Cookies.");
         document.write("<br>");
         document.write("</li>");
     }
