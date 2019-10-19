@@ -1,119 +1,208 @@
-*{
-  box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+h2#delicious{
+  margin-top: -10px;
+}
+
+h2#food{
+  margin-top: -40px;
+
+}
+
+h3.posted{
+  margin-top: -40px;
+
+}
+
+body {
+  margin: auto;
+  width: 960px;
+}
+
+.clearfix {
+  clear: both;
 }
 
 header {
-  height: 95px;
-  background-color: #616060;
-  position: relative;
-  margin-bottom: 30px;
+  margin-top: 35px;
 }
-main {
+
+.logo {
+  float: left;
+  margin-right: 10px;
+}
+
+.title {
+  margin-top: -5px;
+  float: left;
+}
+
+#delicious {
+  margin-left: -6px;
+  font-family: Yellowtail;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#food {
+  font-size: 10px;
+  font-family: arial;
+}
+
+.icons {
+  float: right;
+  margin-top: 10px;
+}
+
+.icons ul li {
+  display: inline-block;
+  margin-left: -2px;
+}
+
+.icons ul li:nth-child(5) {
+  margin-left: -3px;
+  margin-right: -1px;
+}
+
+.icons ul li:nth-child(6) {
+  margin-right: 8px;
+}
+
+.divider {
+  margin-top: 30px;
+  margin-bottom: 52px;
+  height: 13px;
+  width: 100%;
+  background-image: repeating-linear-gradient(-45deg, white, white 1px, #bfb8be 1px, #bfb8be 2px);
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Oswald';
+}
+
+.posted {
+  float: left;
+  font-size: 12px;
+  font-family: arial;
+  color: #bfb8be;
+  margin-top: 12px;
+}
+
+.print {
+  float: right;
+  font-size: 12px;
+  font-family: arial;
+  margin-top: 12px;
+  margin-left: 2px;
+  color: #bfb8be;
+}
+
+#choco {
   width: 960px;
-  margin: auto;
+  margin-top: 32px;
 }
 
-nav {
-  width: 960px;
-  margin: auto;
-}
-nav > ul {
-  position: absolute; 
-  top: 50%;
-  height: 70px;
-  margin-top: -35px;
-  
+article p {
+  margin-top: 30px;
+  text-indent: 30px;
+  line-height: 25px;
+  font-size: 21px;
+  color: #332a28;
 }
 
-nav > ul > li {
-  display: block;
-  margin-right: 50px;
-  float: left;
-  text-align: center;
-  line-height: 60px;
-  margin-right: 50px;
-  padding-left: 30px;
-}
-
-nav > ul > li a {
-color: white;
-text-decoration: none;
-
-  
-}
-
-
-nav > ul > li:first-child{
-  margin-right: 25px;
-}
-
-main > img:first-child {
-  margin-bottom: 30px;
-
-}
-
-main > ul > li {
-  float: left;
-  /* margin-right: 30px; */
-}
-
-main > ul > li:nth-child(3n + 2){
-  margin: 0 30px;
-}
-
-main > ul {
-  margin-bottom: 30px;
-  overflow: hidden;
-  float: left;
-  margin-left: -40px;
-}
-
-main > article {
-  margin-bottom: 30px;
-}
-main > article > section {
-  width: 50%;
-  float:right;
-  padding-left: 30px;
-}
-section {
+.recipe {
   position: relative;
-  height: 400px;
+  margin-top: 30px;
+  font-family: cursive;
+  font-size: 20px;
+  color: #48402c;
+  line-height: 33px;
 }
 
-section > button {
-  width: 120px;
-  height: 30px;
-  background-color: #111;
-  color: #f1ecec;
-  border-radius: 2px;
+input {
+  margin-right: 10px;
+}
+
+.recipe img {
+  width: 960px;
+}
+
+.list-left {
   position: absolute;
-  bottom: 0px;
-  transition: 350ms;
+  top: 41px;
+  left: 60px;
+
 }
 
-section > button:hover{
-  background-color: blanchedalmond;
-  color: #111;
-  transition: 350ms;
+.list-right {
+  width: 400px;
+  position: absolute;
+  top: 41px;
+  left: 490px;
+}
+
+.bottom {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.author h3 {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.author img {
+  float: left;
+  margin-right: 20px;
+}
+
+.author p {
+  font-size: 20px;
+  color: #332a28;
+  line-height: 25px;
+  margin-top: 10px;
+  width: 600px;
+  float: left;
+}
+
+button {
+  margin-top: -15px;
+  float: right;
+  background-color: #bc7058;
+  font-size: 20px;
+  font-family: arial;
+  letter-spacing: -1px;
+  color: white;
+  border: none;
+  width: 180px;
+  height: 55px;
 }
 
 footer {
-  background-color: #444;
-  height: 150px;
+  margin-top: 140px;
+  margin-bottom: 80px;
+  text-align: center;
 }
 
-
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 7px;
+.halfline {
+  display: inline-block;
+  width: 47%;
+  height: 1px;
+  vertical-align: 85%;
+  background-color: #bfb8be;
 }
 
-p {
-  font-size: 1em;
-  font-style: italic;
-  height: 336px;
-  overflow: auto;
-  
+footer img {
+  display: inline-block;
+}
+
+footer p {
+  margin-top: 30px;
+  line-height: 22px;
+  color: #bfb8be;
 }
