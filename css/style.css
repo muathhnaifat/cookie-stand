@@ -1,4 +1,9 @@
 
+img{
+display: block;
+margin: auto;
+}
+
 footer{
   text-align: center;
   color: rgb(119, 57, 69);
