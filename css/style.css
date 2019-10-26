@@ -1,4 +1,29 @@
 
+
+nav li {
+  display: inline-block;
+  padding: 35px 20px 20px 10px;
+  height: 35px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+nav li:hover {
+  color: rgb(0, 70, 89);
+  text-align: center;
+
+}
+
+nav h1 {
+  float: left;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 46px;
+  margin: 10px 20px 20px 10px;
+  text-align: center;
+
+}
 img{
 display: block;
 margin: auto;
